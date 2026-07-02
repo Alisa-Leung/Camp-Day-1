@@ -24,7 +24,8 @@ img {
 body {
     text-align: center;
     font-family: var(--hammersmith);
-    background-color: var(--light-blue);
+    min-height: 100vh;
+    background-image: radial-gradient(#1794ae, #c1e2e6) !important;
 }
 p {
     color: var(--main-blue);
@@ -59,8 +60,8 @@ p {
     transform: translateY(-4px);
 }
 #profileDiv {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     padding: 8px;
 }
